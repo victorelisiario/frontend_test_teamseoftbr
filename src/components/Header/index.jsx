@@ -4,7 +4,7 @@ import { IoIosArrowDown, IoIosArrowBack } from 'react-icons/io'
 import { FaRegUserCircle } from 'react-icons/fa'
 import { AiOutlineShoppingCart } from 'react-icons/ai'
 
-export function Header() {
+export function Header({ cart }) {
   return (
     <div className="header">
       <button className="header__arrowBack">

@@ -7,30 +7,37 @@ import { Ingredientes } from './components/Ingredientes';
 
 
 
+
+
 function App() {
-  const [sales, setSales] = useState([]);
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [cart, setCart] = useState([]);
 
   useEffect(() => {
     fetch('https://6077803e1ed0ae0017d6aea4.mockapi.io/test-frontend/products')
       .then(response => response.json())
-      .then(data => setSales(data))
+      .then(data => setProducts(data))
+      .then(data => setLoading(false))
   }, [])
 
-  console.log(sales)
+  console.log(products)
 
-  return (
-    <>
-      <Header />
-      <div className="container">
+  if (loading) {
+    return (<div>loading</div>)
+  } else {
+    return (
+      <>
+        {console.log('oi')}
+        <Header cart={cart} />
+        <div className="container">
+          <Item products={products} />
+          <Ingredientes products={products} />
+        </div>
+      </>
+    );
+  }
 
-        <Item />
-        <Ingredientes />
-
-
-
-      </div>
-    </>
-  );
 }
 
 export default App;
