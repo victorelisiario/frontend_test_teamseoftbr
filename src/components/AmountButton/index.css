@@ -1,0 +1,38 @@
+.amountButton {
+  width: 5.56rem;
+  height: 2rem;
+  padding: 0.25rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+
+  border: 1px solid #F09035;
+  border-radius: 5px;
+}
+
+.amountButton__button {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-style: none;
+  background: transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.2rem;
+  color: #D80000;
+}
+
+.amountButton--big {
+  width: 8.75rem;
+  height: 2.5rem;
+}
+
+.amountButton__button--disable {
+  color: #AEB6C1;
+  pointer-events: none;
+}

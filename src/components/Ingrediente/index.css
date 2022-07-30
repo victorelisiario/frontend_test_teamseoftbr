@@ -1,0 +1,28 @@
+.ingrediente {
+  height: 5.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  border-bottom: 1px solid #E8A634;
+}
+
+.ingrediente__tittle {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  color: #4E4E4E;
+}
+
+.ingrediente__amount {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+}
+
+.ingrediente__value {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  color: #F09035;
+}

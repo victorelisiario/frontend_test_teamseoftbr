@@ -1,0 +1,151 @@
+.header {
+  display: flex;
+  background: #F4F4F4;
+  justify-content: space-between;
+  padding: 0 2.5rem;
+  width: 100%;
+  height: 5rem;
+}
+
+.header img {
+  padding: 1rem 0;
+}
+
+.header__container {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  gap: 1.5rem;
+
+}
+
+.header__entregaContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 14.3rem;
+  height: 3rem;
+  background-color: white;
+  border-radius: 4px;
+  padding: 0.5rem;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.header__entrega {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.header__titulo {
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  color: #D80000;
+}
+
+.header__endereco {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #656363;
+}
+
+.header__entregaContainer button {
+  background: transparent;
+  border-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.header__arrowDown {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #D80000;
+}
+
+.header__bucarEstabelecimento {
+  height: 3rem;
+  background-color: white;
+  border-radius: 4px;
+  padding: 0.5rem;
+  width: 22rem;
+
+  border: 1px solid #ED3237;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 10px;
+  letter-spacing: 0.33px;
+  color: #656363;
+}
+
+.header__entrar {
+  width: 5.5rem;
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.2px;
+  color: #ED3237;
+
+  border-style: none;
+  background: transparent;
+}
+
+.header__user {
+  width: 2rem;
+  height: 2rem;
+}
+
+.header__carrinho {
+  width: 6.62rem;
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px;
+  letter-spacing: 0.2px;
+  color: #ED3237;
+
+  border-style: none;
+  background: transparent;
+}
+
+.header_carrinhoIcon {
+  position: relative;
+  display: inline-block;
+}
+
+.header__cart {
+  width: 2rem;
+  height: 2rem;
+}
+
+.header__notification {
+  background: #F09035;
+  border-radius: 50%;
+  height: 1rem;
+  width: 1rem;
+  position: sticky;
+
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: -5px;
+  right: -8px;
+}
