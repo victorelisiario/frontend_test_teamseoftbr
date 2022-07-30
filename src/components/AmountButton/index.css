@@ -1,13 +1,12 @@
 .amountButton {
   width: 5.56rem;
+
   height: 2rem;
   padding: 0.25rem;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-
 
   border: 1px solid #F09035;
   border-radius: 5px;
@@ -30,9 +29,24 @@
 .amountButton--big {
   width: 8.75rem;
   height: 2.5rem;
+  min-width: 5.56rem;
 }
 
 .amountButton__button--disable {
   color: #AEB6C1;
   pointer-events: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .amountButton--big {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 720px) {}
+
+@media screen and (max-width: 480px) {
+  .amountButton--big {
+    width: 8.75rem;
+  }
 }

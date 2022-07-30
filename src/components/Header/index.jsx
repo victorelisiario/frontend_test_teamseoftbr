@@ -1,12 +1,15 @@
 import './index.css';
 import deliverize from '../../assets/Deliverize.png'
-import { IoIosArrowDown } from 'react-icons/io'
+import { IoIosArrowDown, IoIosArrowBack } from 'react-icons/io'
 import { FaRegUserCircle } from 'react-icons/fa'
 import { AiOutlineShoppingCart } from 'react-icons/ai'
 
 export function Header() {
   return (
     <div className="header">
+      <button className="header__arrowBack">
+        <IoIosArrowBack />
+      </button>
       <img src={deliverize} alt="Deliverize" href="#" />
       <div className="header__container">
         <div className="header__entregaContainer">

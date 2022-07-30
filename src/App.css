@@ -8,3 +8,23 @@
   margin: 0 auto;
   max-width: 100rem;
 }
+
+@media screen and (max-width: 1070px) {
+  .container {
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .container {}
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 1rem;
+  }
+}

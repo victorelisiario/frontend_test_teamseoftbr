@@ -82,13 +82,21 @@
 
 .ingredientes__request {
   display: flex;
+  width: 100%;
   align-items: center;
+  justify-content: space-between;
   gap: 0.5rem;
   margin-top: 2rem;
 }
 
+.ingredientes__amountButton {
+  width: auto;
+  min-width: 5.56rem;
+}
+
 .ingredientes__resquestButton {
   width: 12.19rem;
+  min-width: 6rem;
   height: 2.5rem;
   border-style: none;
   background: #F09035;
@@ -98,4 +106,47 @@
   line-height: 0.625rem;
   letter-spacing: 0.33px;
   color: #FFFFFF;
+}
+
+@media screen and (max-width: 1070px) {
+  .container {
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+  }
+
+  .ingredientes {
+    width: 100%;
+    max-width: none;
+  }
+
+  .ingredientes__request {
+    justify-content: right;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ingredientes {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0;
+    border: none;
+    border-radius: 8px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  .ingredientes__request {
+    display: flex;
+    width: 100%;
+    gap: 0.5rem;
+    margin-top: 2rem;
+  }
+
+  .ingredientes__resquestButton {
+    width: 100%;
+
+  }
 }

@@ -7,6 +7,10 @@
   height: 5rem;
 }
 
+.header__arrowBack {
+  display: none;
+}
+
 .header img {
   padding: 1rem 0;
 }
@@ -148,4 +152,43 @@
   position: absolute;
   top: -5px;
   right: -8px;
+}
+
+@media screen and (max-width: 1200px) {
+  .header__bucarEstabelecimento {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .header__entregaContainer {
+    display: none;
+  }
+
+  .header {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header__container {
+    display: none;
+  }
+
+  .header__arrowBack {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+
+    font-size: 1.5rem;
+    border-style: none;
+    background: transparent;
+
+    position: relative;
+    top: 1.5rem;
+    left: -4rem;
+    color: #686868;
+  }
 }
