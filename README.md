@@ -23,16 +23,24 @@ proposto por [TeamSoft Tecnologia e Sistemas Ltda ME](https://github.com/Teamsof
 ## Para rodar o projeto siga os passos abaixo:
 
 * Clone o repositório:  
- ```git clone https://github.com/victorelisiario/frontend_test_teamseoftbr.git```  
+ ```
+ git clone https://github.com/victorelisiario/frontend_test_teamseoftbr.git
+ ```  
 
-* Abra o repositorio
-```cd frontend_test_teamseoftbr```
+* Abra o repositorio  
+```
+cd frontend_test_teamseoftbr
+```
 
 * Instale as dependências  
- ```yarn```  
+ ```
+ yarn
+ ```  
 
 * Rode o script 'start'  
-```yarn start```  
+```
+yarn start
+```  
 
 ## Abaixo, o projeto funcionando:
 ![](https://media.giphy.com/media/FkzOMNNoilmuJdtHQT/giphy.gif)
