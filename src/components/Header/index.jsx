@@ -1,4 +1,4 @@
-import './index.css';
+import './styles.css';
 import deliverize from '../../assets/Deliverize.svg'
 
 import { IoIosArrowDown, IoIosArrowBack } from 'react-icons/io'
@@ -19,7 +19,11 @@ export function Header() {
 
   function handleShowCart() {
     console.log(cart)
-    console.log(JSON.stringify(cart))
+    console.log(JSON.stringify({
+      orderID: '9SD0JIGVBJBIOFDJBBD9A',
+      timestamp: new Date(),
+      data: cart
+    }))
     localStorage.removeItem('deliverize');
     setCart([])
     alert('Veja o conteúdo do carrinho no console :)')

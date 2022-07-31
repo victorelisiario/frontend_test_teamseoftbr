@@ -1,4 +1,4 @@
-import './index.css'
+import './styles.css'
 import { AmountButton } from '../AmountButton'
 
 export function Ingredient(item) {
@@ -13,7 +13,7 @@ export function Ingredient(item) {
     <section className="ingredient">
       <h6 className="ingredient__tittle">{name}</h6>
       <div className="ingredient__amount">
-        <AmountButton bigVariant={false} name={name} />
+        <AmountButton largeVariant={false} name={name} />
       </div>
       <span className="ingredient__value"> + {value}</span>
     </section>

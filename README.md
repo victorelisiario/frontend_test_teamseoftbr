@@ -1,7 +1,7 @@
 
 ## Proposta
 O desafio foi codificar [esse layout](https://www.figma.com/file/1RWDOOFeh5836Y4KruOl5w/FrontEnd?node-id=0%3A1),
-proposto por [TeamSoft Tecnologia e Sistemas Ltda ME.](https://github.com/Teamsoftbr)  
+proposto por [TeamSoft Tecnologia e Sistemas Ltda ME](https://github.com/Teamsoftbr)  
 
 ## Obrigatório
 * HTML e CSS 
@@ -23,13 +23,16 @@ proposto por [TeamSoft Tecnologia e Sistemas Ltda ME.](https://github.com/Teamso
 ## Para rodar o projeto siga os passos abaixo:
 
 * Clone o repositório:  
- `git clone https://github.com/victorelisiario/frontend_test_teamseoftbr.git`  
+ ```git clone https://github.com/victorelisiario/frontend_test_teamseoftbr.git```  
 
-* Abra o repositorio local e instale as dependências  
- `yarn`  
+* Abra o repositorio
+```cd frontend_test_teamseoftbr```
+
+* Instale as dependências  
+ ```yarn```  
 
 * Rode o script 'start'  
-` yarn start`   
+```yarn start```  
 
 ## Abaixo, o projeto funcionando:
 ![](https://media.giphy.com/media/FkzOMNNoilmuJdtHQT/giphy.gif)

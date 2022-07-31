@@ -1,4 +1,4 @@
-import './index.css'
+import './styles.css'
 import hamburguer from '../../assets/hamburguer.png'
 
 export function Item({ products }) {
@@ -17,7 +17,7 @@ export function Item({ products }) {
   });
 
   return (
-    <section className="item__data">
+    <section className="item">
       {/* product.url_image 404 Not Found - link quebrado? */}
       <img src={hamburguer} alt={`Foto: ` + product.nm_product} />
       <h1 className="item__name">{product.nm_product}</h1>

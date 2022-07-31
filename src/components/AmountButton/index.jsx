@@ -1,9 +1,9 @@
-import './index.css'
+import './styles.css'
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 import { useContext, useEffect, useState } from 'react';
 import { IngredientContext } from '../../context/useIngredient';
 
-export function AmountButton({ bigVariant, name }) {
+export function AmountButton({ largeVariant, name }) {
   const [amount, setAmount] = useState(() => {
     if (name === "Quantidade") {
       return 1
@@ -32,8 +32,8 @@ export function AmountButton({ bigVariant, name }) {
 
   return (
     <>
-      {bigVariant ?
-        < div className="amountButton amountButton--big" >
+      {largeVariant ?
+        < div className="amountButton amountButton--large" >
           {amount === 1 ?
             <button className="amountButton__button--disable amountButton__button"  >
               <AiOutlineMinus /></button >

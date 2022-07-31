@@ -1,4 +1,4 @@
-.item__data {
+.item {
   width: 60%;
   height: 100%;
   display: flex;
@@ -6,7 +6,7 @@
   flex-direction: column;
 }
 
-.item__data img {
+.item img {
   width: 100%;
   height: 100%;
   max-width: 36.18rem;
@@ -48,11 +48,11 @@
 }
 
 @media screen and (max-width: 1070px) {
-  .item__data img {
+  .item img {
     width: 80%;
   }
 
-  .item__data {
+  .item {
     width: 100%;
   }
 

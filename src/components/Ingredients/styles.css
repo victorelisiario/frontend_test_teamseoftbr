@@ -54,7 +54,7 @@
   gap: 0.5rem;
 }
 
-.ingredients__option {
+.ingredients__choice {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -62,14 +62,14 @@
   width: 100%;
 }
 
-.ingredients__option label {
+.ingredients__choice label {
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   color: #4E4E4E;
 }
 
-.ingredients__option input {
+.ingredients__choice input {
   appearance: none;
   border-radius: 50%;
   width: 1rem;
@@ -78,7 +78,7 @@
   transition: 0.1s all linear;
 }
 
-.ingredients__option input:checked {
+.ingredients__choice input:checked {
   height: 1rem;
   width: 1rem;
   background-color: #FEBC10

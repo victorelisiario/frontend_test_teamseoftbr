@@ -1,4 +1,4 @@
-import './index.css'
+import './styles.css'
 
 import { AmountButton } from '../AmountButton'
 import { Ingredient } from '../Ingredient'
@@ -56,11 +56,11 @@ export function Ingredients({ products }) {
           <span className="ingredients__tittle">Precisa de Talher?</span>
         </div>
         <div className="ingredients__boolean">
-          <div className="ingredients__option">
+          <div className="ingredients__choice">
             <label >Sim</label>
             <input type="radio" name="talher" value="sim" onChange={handleTalherChange} />
           </div>
-          <div className="ingredients__option">
+          <div className="ingredients__choice">
             <label >Não</label>
             <input type="radio" name="talher" value="não" onChange={handleTalherChange} />
           </div>
@@ -68,7 +68,7 @@ export function Ingredients({ products }) {
 
         <div className="ingredients__request">
           <div className="ingredients__amountButton">
-            <AmountButton bigVariant={true} name="Quantidade" />
+            <AmountButton largeVariant={true} name="Quantidade" />
           </div>
           <button className="ingredients__resquestButton" onClick={handleAddItem}>Adicionar</button>
         </div>
