@@ -17,25 +17,22 @@ export function Item({ products }) {
   });
 
   return (
-    <section className="item__dados">
+    <section className="item__data">
       {/* product.url_image 404 Not Found - link quebrado? */}
-      <img src={hamburguer} alt="hamburguer" href="#" />
+      <img src={hamburguer} alt={`Foto: ` + product.nm_product} />
       <h1 className="item__name">{product.nm_product}</h1>
       <p className="item__description">{product.description}</p>
       <div className="item__price">
         {brVl_discount ?
-          // se existir preço com desconto, renderiza os 2, senao apenas vl_price 
+          // se existir preço com desconto, renderiza os 2, 
+          // senao apenas vl_price 
           <>
-            <span>
-              {brVl_discount}
-            </span>
+            <span>{brVl_discount}</span>
             <span className="item__price--disable">
-              R$ {brVl_price}
-            </span>
-          </> : <>
-            <span>
               {brVl_price}
             </span>
+          </> : <>
+            <span>{brVl_price}</span>
           </>
         }
       </div>

@@ -11,10 +11,9 @@
 
 @media screen and (max-width: 1070px) {
   .container {
-    flex-wrap: wrap;
     height: auto;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     gap: 1rem;
   }
 }

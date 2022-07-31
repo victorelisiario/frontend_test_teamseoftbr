@@ -1,4 +1,6 @@
 .header {
+  position: sticky;
+  top: 0px;
   display: flex;
   background: #F4F4F4;
   justify-content: space-between;
@@ -20,10 +22,9 @@
   padding: 1rem;
   align-items: center;
   gap: 1.5rem;
-
 }
 
-.header__entregaContainer {
+.header__addressContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -35,26 +36,26 @@
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.header__entrega {
+.header__delivery {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
 }
 
-.header__titulo {
+.header__tittle {
   font-size: 0.75rem;
   font-weight: 400;
   letter-spacing: 0.2px;
   color: #D80000;
 }
 
-.header__endereco {
+.header__address {
   font-size: 0.75rem;
   font-weight: 700;
   color: #656363;
 }
 
-.header__entregaContainer button {
+.header__addressContainer button {
   background: transparent;
   border-style: none;
   display: flex;
@@ -67,7 +68,7 @@
   color: #D80000;
 }
 
-.header__bucarEstabelecimento {
+.header__searchBar {
   height: 3rem;
   background-color: white;
   border-radius: 4px;
@@ -83,7 +84,12 @@
   color: #656363;
 }
 
-.header__entrar {
+.header__searchBar:focus {
+  border: 2px solid #ED3237;
+  outline: none;
+}
+
+.header__login {
   width: 5.5rem;
   height: 2rem;
   display: flex;
@@ -105,7 +111,7 @@
   height: 2rem;
 }
 
-.header__carrinho {
+.header__cart {
   width: 6.62rem;
   height: 2rem;
   display: flex;
@@ -122,12 +128,12 @@
   background: transparent;
 }
 
-.header_carrinhoIcon {
+.header_cartIconContainer {
   position: relative;
   display: inline-block;
 }
 
-.header__cart {
+.header__cartIcon {
   width: 2rem;
   height: 2rem;
 }
@@ -155,13 +161,13 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .header__bucarEstabelecimento {
+  .header__searchBar {
     display: none;
   }
 }
 
-@media screen and (max-width: 720px) {
-  .header__entregaContainer {
+@media screen and (max-width: 785px) {
+  .header__addressContainer {
     display: none;
   }
 
@@ -170,7 +176,7 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 580px) {
   .header__container {
     display: none;
   }

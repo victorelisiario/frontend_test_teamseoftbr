@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './global.css';
+import './styles/global.css';
 import App from './App';
+
 import { IngredientProvider } from './context/useIngredient';
 import { CartProvider } from './context/useCart';
 

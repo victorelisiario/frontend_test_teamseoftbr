@@ -1,4 +1,4 @@
-.item__dados {
+.item__data {
   width: 60%;
   height: 100%;
   display: flex;
@@ -6,7 +6,7 @@
   flex-direction: column;
 }
 
-.item__dados img {
+.item__data img {
   width: 100%;
   height: 100%;
   max-width: 36.18rem;
@@ -48,11 +48,11 @@
 }
 
 @media screen and (max-width: 1070px) {
-  .item__dados img {
+  .item__data img {
     width: 80%;
   }
 
-  .item__dados {
+  .item__data {
     width: 100%;
   }
 
@@ -66,10 +66,7 @@
   }
 }
 
-
-@media screen and (max-width: 720px) {}
-
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
   .item__name {
     font-size: 1.125rem;
     padding: 1.5rem 0;

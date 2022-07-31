@@ -22,23 +22,37 @@ export function CartProvider({ children }) {
 
   function handleAddToCart() {
 
-    //RETIRAR ITENS COM QUANTIDADE === 0
-    let newItem = [...ingredients]
-    const newIngredientesToBeAdded = newItem.filter(item => item.amount !== 0)
+    //VERIFICA NUMERO DE ITENS A SER ADICIONADO
+    let itensQuantity = ingredients[0].amount
+    console.log(itensQuantity)
 
-    //CRIAR OBJETO PARA ADICIONAR NO CARRINHO
+    //RETIRA OS ITENS COM QUANTIDADE === 0
+    let newItem = [...ingredients]
+    let newIngredientesToBeAdded = newItem.filter(item => item.amount !== 0)
+
+    //RETIRA OBJETO COM QUANTIDADE DE ITEMS
+    newIngredientesToBeAdded = newIngredientesToBeAdded.filter(item => item.name !== "Quantidade")
+
+    //CRIA OBJETO PARA ADICIONAR NO CARRINHO
     const newItemToBeAdded = {
       name: item,
       talher: talher,
       ingredientes: [...newIngredientesToBeAdded]
     }
 
-    let newCart = [...cart];
-    newCart.push(newItemToBeAdded)
+    //CRIA NOVO CARRINHO COM OS DADOS DO CARRINHO ATUAL
+    var newCart = [...cart];
 
+    // EMPURRA O ITEM PARA O NOVO CARRINHO itensQuantity DE VEZES
+    for (itensQuantity; itensQuantity > 0; itensQuantity--) {
+      newCart.push(newItemToBeAdded)
+    }
+
+    // SETA NOVO CARRINHO
     setCart(newCart)
     localStorage.setItem('deliverize', JSON.stringify(newCart))
 
+    // RETORNA OS DADOS ADD PARA RENDERIZAR POPUP + REDIRECT
     return newItemToBeAdded;
   }
 

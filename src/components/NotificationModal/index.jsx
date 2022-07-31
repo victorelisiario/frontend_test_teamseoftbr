@@ -1,14 +1,14 @@
 import './index.css'
-import ehCSS from '../../assets/ehCSS.png'
+import arrow from '../../assets/arrow.svg'
 
 export function NotificationModal({ data }) {
   return (
     <>
       <div className="modal">
-        <img src={ehCSS} alt="Deliverize" href="#" />
-        <h3 className="modal__tittle">Adicionar com Sucesso</h3>
+        <img src={arrow} alt="Deliverize" href="#" />
+        <h3 className="modal__tittle">Adicionado com Sucesso</h3>
         <div className="modal__container">
-          <h4 className="modal__itemName">data.name</h4>
+          <h4 className="modal__itemName">{data.name}</h4>
           <span >Ingredientes: </span>
           <ul>
             {
