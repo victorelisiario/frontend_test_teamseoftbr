@@ -177,9 +177,20 @@
 }
 
 @media screen and (max-width: 580px) {
+  .header {
+    height: 3.5rem;
+    align-items: center;
+  }
+
+  .header img {
+    width: 80%;
+    padding: 0;
+  }
+
   .header__container {
     display: none;
   }
+
 
   .header__arrowBack {
     display: flex;
@@ -193,8 +204,8 @@
     background: transparent;
 
     position: relative;
-    top: 1.5rem;
-    left: -4rem;
+    top: 0;
+    right: 2rem;
     color: #686868;
   }
 }

@@ -31,12 +31,11 @@ export function Ingredients({ products }) {
   async function handleAddItem() {
     const newItemAdded = await handleAddToCart()
     setNotificationInfo(newItemAdded)
-    console.log(newItemAdded)
 
     setTimeout(function () {
       setNotificationInfo(null);
-/*       window.location.href = "/";
- */    }, 1000); // 1 segundo
+      window.location.href = "/";
+    }, 1000); // 1 second
   }
 
   return (

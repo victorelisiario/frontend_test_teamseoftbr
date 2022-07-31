@@ -32,4 +32,4 @@ proposto por [TeamSoft Tecnologia e Sistemas Ltda ME.](https://github.com/Teamso
 ` yarn start`   
 
 ## Abaixo, o projeto funcionando:
-![](https://media.giphy.com/media/eFqEKgIyQnoVul6E8d/giphy.gif)
+![](https://media.giphy.com/media/FkzOMNNoilmuJdtHQT/giphy.gif)
