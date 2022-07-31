@@ -1,9 +1,30 @@
 import './index.css'
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
-import { useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
+import { IngredientContext } from '../../context/useIngredient';
+import { FaUnderline } from 'react-icons/fa';
 
-export function AmountButton({ bigVariant }) {
+export function AmountButton({ bigVariant, name }) {
   const [amount, setAmount] = useState(0);
+
+  let {
+    ingredients,
+  } = useContext(IngredientContext);
+
+  useEffect(() => {
+    if (name) {
+      const exists = ingredients.find(ingredient => ingredient.name === name)
+      if (exists === undefined) {
+        ingredients.push({ name, amount })
+      } else {
+        ingredients.map(ingredient => {
+          if (ingredient.name === name) {
+            ingredient.amount = amount
+          }
+        })
+      }
+    }
+  }, [amount])
 
   return (
     <>

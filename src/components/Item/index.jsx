@@ -5,13 +5,13 @@ export function Item({ products }) {
   const product = products.find(product => product.id === "1");
 
   if (product.vl_discount) {
-    product.vl_discount = product.vl_discount.toLocaleString("pt-br", {
+    var brVl_discount = product.vl_discount.toLocaleString("pt-br", {
       style: "currency",
       currency: "BRL"
     });
   }
 
-  product.vl_price = product.vl_price.toLocaleString("pt-br", {
+  const brVl_price = product.vl_price.toLocaleString("pt-br", {
     style: "currency",
     currency: "BRL"
   });
@@ -23,18 +23,18 @@ export function Item({ products }) {
       <h1 className="item__name">{product.nm_product}</h1>
       <p className="item__description">{product.description}</p>
       <div className="item__price">
-        {product.vl_discount ?
+        {brVl_discount ?
           // se existir preço com desconto, renderiza os 2, senao apenas vl_price 
           <>
             <span>
-              {product.vl_discount}
+              {brVl_discount}
             </span>
             <span className="item__price--disable">
-              R$ {product.vl_price}
+              R$ {brVl_price}
             </span>
           </> : <>
             <span>
-              {product.vl_price}
+              {brVl_price}
             </span>
           </>
         }

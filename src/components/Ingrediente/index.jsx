@@ -13,7 +13,7 @@ export function Ingrediente(item) {
     <section className="ingrediente">
       <h6 className="ingrediente__tittle">{nome}</h6>
       <div className="ingrediente__amount">
-        <AmountButton bigVariant={false} />
+        <AmountButton bigVariant={false} name={nome} />
       </div>
       <span className="ingrediente__value"> + {valor}</span>
     </section>

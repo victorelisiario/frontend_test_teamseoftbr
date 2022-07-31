@@ -3,8 +3,23 @@ import deliverize from '../../assets/Deliverize.png'
 import { IoIosArrowDown, IoIosArrowBack } from 'react-icons/io'
 import { FaRegUserCircle } from 'react-icons/fa'
 import { AiOutlineShoppingCart } from 'react-icons/ai'
+import { useContext } from 'react';
+import { cartContext } from '../../context/useCart';
 
-export function Header({ cart }) {
+export function Header() {
+  let {
+    cart
+  } = useContext(cartContext);
+
+  if (cart.length > 0) {
+    var renderNotification = true
+  }
+
+  function handleShowCart() {
+    console.log(cart)
+    alert('Veja o conteudo do carrinho no console :)')
+  }
+
   return (
     <div className="header">
       <button className="header__arrowBack">
@@ -26,10 +41,13 @@ export function Header({ cart }) {
           <FaRegUserCircle className="header__user" />
           <span>Entrar</span>
         </button>
-        <button className="header__carrinho">
+        <button className="header__carrinho" onClick={handleShowCart}>
           <div className="header_carrinhoIcon">
             <AiOutlineShoppingCart className="header__cart" />
-            <span className="header__notification">1</span>
+            {
+              renderNotification &&
+              <span className="header__notification">{cart.length}</span>
+            }
           </div>
           <span>Carrinho</span>
         </button>
